@@ -161,6 +161,7 @@ template, [hidden] {
   --color-black: #010101;
   --color-grey: #757575;
   --color-white: #fff;
+  --color-violet: #7b61ff;
 }
 
 .title-22 {
@@ -249,7 +250,8 @@ template, [hidden] {
 }
 
 .showcase-sm {
-  width: 125px;
+  border: 1px dashed var(--color-violet);
+  width: 78px;
   background: #000;
   flex-wrap: wrap;
   gap: 20px;
@@ -257,7 +259,27 @@ template, [hidden] {
   display: flex;
 }
 
-.button {
+.showcase-md {
+  border: 1px dashed var(--color-violet);
+  width: 230px;
+  background: #000;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.showcase-xl {
+  border: 1px dashed var(--color-violet);
+  width: 100vw;
+  background: #000;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.button, .button--icon {
   background-color: var(--color-red);
   color: var(--color-white);
   border: none;
@@ -265,16 +287,27 @@ template, [hidden] {
   padding: 12px 20px;
 }
 
-.button:hover {
+.button:hover, .button--icon:hover {
   background-color: var(--color-red-dark);
 }
 
-.button:focus {
+.button:focus, .button--icon:focus {
   border: 3px solid var(--color-green);
 }
 
-.button:disabled {
+.button:disabled, .button--icon:disabled {
   background-color: var(--color-grey);
+}
+
+.button--icon {
+  place-content: center;
+  gap: 10px;
+  display: flex;
+}
+
+.button--icon > img {
+  width: 22px;
+  height: 14px;
 }
 
 /*# sourceMappingURL=atomic.30e9e7bd.css.map */

@@ -1,9 +1,13 @@
-.button {
+@mixin buttonCore {
   background-color: var(--color-red);
   border-radius: 4px;
   color: var(--color-white);
   padding: 12px 20px;
   border: none;
+}
+
+.button {
+  @include buttonCore;
 
   &:hover {
     background-color: var(--color-red-dark);
@@ -15,5 +19,19 @@
 
   &:disabled {
     background-color: var(--color-grey);
+  }
+}
+
+.button--icon {
+  @extend .button;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+  & > img {
+    width: 22px;
+    height: 14px;
   }
 }
