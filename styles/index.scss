@@ -1,4 +1,9 @@
 @import "variables";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif', 'serif';
+}
 
 main {
   background: var(--color-blue);
