@@ -1,8 +1,7 @@
+@import "normalize";
 @import "variables";
 @import "fonts";
 @import "layouts";
+@import "components/showcase";
+@import "components/button";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-
-main {
-  background: var(--color-blue);
-}

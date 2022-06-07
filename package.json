@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx parcel index.html"
+    "subatomic": "npx parcel subatomic.html",
+    "atomic": "npx parcel atomic.html",
+    "dev": "npx parcel index.html"
   },
   "keywords": [],
   "author": "",

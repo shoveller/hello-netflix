@@ -1,0 +1,12 @@
+@mixin showcase {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: black;
+}
+
+.showcase-sm {
+  @include showcase;
+  width: 125px;
+}
