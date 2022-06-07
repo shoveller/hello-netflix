@@ -1,0 +1,22 @@
+$titleSizes: (22, 24, 28, 34, 48, 60);
+
+.title {
+  @each $size in $titleSizes{
+    &-#{$size} {
+      font-family: 'Spoqa Han Sans', 'serif';
+      font-weight: bold;
+      font-size: #{$size}px;
+    }
+  }
+}
+
+$textSizes: (12, 14, 16, 18, 20);
+
+.text {
+  @each $size in $textSizes{
+    &-#{$size} {
+      font-family: 'Spoqa Han Sans', 'serif';
+      font-size: #{$size}px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import "//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css";
+:root {
+  --color-red: #e50914;
+  --color-blue: #0071eb;
+  --color-green: #2ede75;
+  --color-black: #010101;
+  --color-grey: #757575;
+}
+
+.title-22 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.title-24 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-28 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.title-34 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.title-48 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.title-60 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.text-12 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 12px;
+}
+
+.text-14 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 14px;
+}
+
+.text-16 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 16px;
+}
+
+.text-18 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 18px;
+}
+
+.text-20 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.wd-221 {
+  width: 221px;
+}
+
+.wd-263 {
+  width: 263px;
+}
+
+.wd-297 {
+  width: 297px;
+}
+
+.wd-339 {
+  width: 339px;
+}
+
+.wd-371 {
+  width: 371px;
+}
+
+main {
+  background: var(--color-blue);
+}
+
+/*# sourceMappingURL=subatomic.30e9e7bd.css.map */

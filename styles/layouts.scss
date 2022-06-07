@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+}
+
+$widthList: (221, 263, 297, 339, 371);
+.wd {
+  @each $size in $widthList{
+    &-#{$size} {
+      width: #{$size}px;
+    }
+  }
+}
