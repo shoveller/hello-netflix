@@ -35,6 +35,12 @@
   justify-content: center;
   align-items: center;
 
+  &:focus {
+    border: 3px solid var(--color-green);
+    outline: none;
+    width: 119px;
+  }
+
   & > img {
     width: 22px;
     height: 14px;

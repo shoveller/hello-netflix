@@ -343,6 +343,12 @@ template, [hidden] {
   display: flex;
 }
 
+.button__icon:focus {
+  border: 3px solid var(--color-green);
+  width: 119px;
+  outline: none;
+}
+
 .button__icon > img {
   width: 22px;
   height: 14px;
