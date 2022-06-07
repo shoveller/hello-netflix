@@ -354,6 +354,10 @@ template, [hidden] {
   height: 14px;
 }
 
+.button__icon.rounded {
+  border-radius: 30px;
+}
+
 .input-continer {
   width: 100%;
   display: inline-block;
