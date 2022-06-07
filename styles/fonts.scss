@@ -1,4 +1,4 @@
-$titleSizes: (22, 24, 28, 34, 48, 60);
+$titleSizes: (14, 22, 24, 28, 34, 48, 60);
 
 .title {
   @each $size in $titleSizes{

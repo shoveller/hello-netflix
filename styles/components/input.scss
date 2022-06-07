@@ -1,0 +1,32 @@
+.input-continer {
+  display: inline-block;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid var(--color-grey);
+  padding: 20px 18px;
+  // FIXME: 왜 100%를 설정하면, 부모를 넘어서는가?
+  width: 90%;
+  color: var(--color-black);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:invalid {
+    border-bottom: 3px solid var(--color-red);
+
+    &+.message {
+      visibility: visible;
+    }
+  }
+}
+
+.input-dark {
+  @extend .input;
+
+  border: none;
+  background-color: #2F2F2F;
+  color: var(--color-white);
+}

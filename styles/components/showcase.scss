@@ -7,17 +7,28 @@
   border: 1px dashed var(--color-violet);
 }
 
-.showcase-sm {
+.showcase__sm {
   @include showcase;
   width: 78px;
 }
 
-.showcase-md {
+.showcase__md {
   @include showcase;
   width: 230px;
 }
 
-.showcase-xl {
+.showcase__lg {
+  @include showcase;
+  width: 630px;
+}
+
+.showcase__lg--white {
+  @include showcase;
+  background: var(--color-white);
+  width: 630px;
+}
+
+.showcase__xl {
   @include showcase;
   width: 100vw;
 }

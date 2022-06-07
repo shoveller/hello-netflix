@@ -8,28 +8,50 @@
     <title>Title</title>
 </head>
 <body>
-<div class="showcase-xl">
-    <div class="showcase-sm">
+<div class="showcase__xl">
+    <div class="showcase__sm">
         <button class="button text-16">버튼</button>
         <button class="button text-16" disabled>버튼</button>
     </div>
-    <div class="showcase-md">
-        <button class="button--icon text-22">
+    <div class="showcase__md">
+        <button class="button__icon text-22">
             <img src="public/leftArrow.svg" alt="left">
             <span>버튼</span>
         </button>
-        <button class="button--icon text-22">
+        <button class="button__icon text-22">
             <span>버튼</span>
             <img src="public/rightArrow.svg" alt="right">
         </button>
-        <button class="button--icon text-22" disabled>
+        <button class="button__icon text-22" disabled>
             <img src="public/leftArrow.svg" alt="left">
             <span>버튼</span>
         </button>
-        <button class="button--icon text-22" disabled>
+        <button class="button__icon text-22" disabled>
             <span>버튼</span>
             <img src="public/rightArrow.svg" alt="right">
         </button>
+    </div>
+    <div class="showcase__lg">
+        <div class="input-continer">
+            <input class="input-dark text-16" type="email" placeholder="레이블"/>
+            <p class="message title-14">오류 메시지를 출력합니다.</p>
+        </div>
+        <div class="input-continer">
+            <input class="input-dark text-16" type="password" minlength="4" maxlength="60" pattern="[a-zA-Z0-9]+"
+                   placeholder="비밀번호"/>
+            <p class="message title-14">비밀번호는 영문, 숫자 조합 4 - 60자 사이 값을 입력합니다.</p>
+        </div>
+    </div>
+    <div class="showcase__lg--white">
+        <div class="input-continer">
+            <input class="input text-16" type="email" placeholder="레이블"/>
+            <p class="message title-14">오류 메시지를 출력합니다.</p>
+        </div>
+        <div class="input-continer">
+            <input class="input text-16" type="password" minlength="4" maxlength="60" pattern="[a-zA-Z0-9]+"
+                   placeholder="비밀번호"/>
+            <p class="message title-14">비밀번호는 영문, 숫자 조합 4 - 60자 사이 값을 입력합니다.</p>
+        </div>
     </div>
 </div>
 </body>
