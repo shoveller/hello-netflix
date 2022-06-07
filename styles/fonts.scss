@@ -10,7 +10,7 @@ $titleSizes: (14, 22, 24, 28, 34, 48, 60);
   }
 }
 
-$textSizes: (12, 14, 16, 18, 20);
+$textSizes: (12, 14, 16, 18, 20, 22);
 
 .text {
   @each $size in $textSizes{

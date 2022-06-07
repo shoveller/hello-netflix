@@ -231,6 +231,11 @@ template, [hidden] {
   font-size: 20px;
 }
 
+.text-22 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 22px;
+}
+
 .flex {
   display: flex;
 }
@@ -259,7 +264,7 @@ template, [hidden] {
   border: 1px dashed var(--color-violet);
   width: 78px;
   background: #000;
-  flex-wrap: wrap;
+  flex-flow: column;
   gap: 20px;
   padding: 20px;
   display: flex;
@@ -269,7 +274,7 @@ template, [hidden] {
   border: 1px dashed var(--color-violet);
   width: 230px;
   background: #000;
-  flex-wrap: wrap;
+  flex-flow: column;
   gap: 20px;
   padding: 20px;
   display: flex;
@@ -279,7 +284,7 @@ template, [hidden] {
   border: 1px dashed var(--color-violet);
   width: 630px;
   background: #000;
-  flex-wrap: wrap;
+  flex-flow: column;
   gap: 20px;
   padding: 20px;
   display: flex;
@@ -290,7 +295,7 @@ template, [hidden] {
   background: #000;
   background: var(--color-white);
   width: 630px;
-  flex-wrap: wrap;
+  flex-flow: column;
   gap: 20px;
   padding: 20px;
   display: flex;
@@ -300,7 +305,7 @@ template, [hidden] {
   border: 1px dashed var(--color-violet);
   width: 100vw;
   background: #000;
-  flex-wrap: wrap;
+  flex-flow: column;
   gap: 20px;
   padding: 20px;
   display: flex;
@@ -311,7 +316,9 @@ template, [hidden] {
   color: var(--color-white);
   border: none;
   border-radius: 4px;
+  place-content: center;
   padding: 12px 20px;
+  display: flex;
 }
 
 .button:hover, .button__icon:hover {
@@ -328,8 +335,11 @@ template, [hidden] {
 }
 
 .button__icon {
-  place-content: center;
+  width: 113px;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+  padding: 15px 20px;
   display: flex;
 }
 

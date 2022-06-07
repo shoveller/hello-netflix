@@ -5,6 +5,8 @@
   padding: 20px;
   background: black;
   border: 1px dashed var(--color-violet);
+  // FIXME: row이면 주변의 영향을 받으므로 임시 수정
+  flex-flow: column;
 }
 
 .showcase__sm {
