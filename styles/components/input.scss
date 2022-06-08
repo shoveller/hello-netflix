@@ -7,7 +7,7 @@
   border: 1px solid var(--color-grey);
   padding: 20px 18px;
   // FIXME: 왜 100%를 설정하면, 부모를 넘어서는가?
-  width: 90%;
+  width: 100%;
   color: var(--color-black);
 
   &:focus {

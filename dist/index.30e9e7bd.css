@@ -311,6 +311,28 @@ template, [hidden] {
   display: flex;
 }
 
+.icon-arrow-left, .icon-arrow-left\:regular {
+  background-image: url("arrow.8037ba88.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-arrow-left-dims {
+  width: 22px;
+  height: 16px;
+}
+
+.icon-arrow-right, .icon-arrow-right\:regular {
+  background-image: url("arrow.8037ba88.svg");
+  background-position: 0 -16px;
+  background-repeat: no-repeat;
+}
+
+.icon-arrow-right-dims {
+  width: 22px;
+  height: 16px;
+}
+
 .button, .button__icon {
   background-color: var(--color-red);
   color: var(--color-white);
@@ -365,7 +387,7 @@ template, [hidden] {
 
 .input, .input-dark {
   border: 1px solid var(--color-grey);
-  width: 90%;
+  width: 100%;
   color: var(--color-black);
   padding: 20px 18px;
 }
@@ -392,6 +414,72 @@ template, [hidden] {
   color: var(--color-red);
   visibility: hidden;
   margin: 5px 0 0 20px;
+}
+
+.icon-logo__red-fill, .icon-logo__red-fill\:regular {
+  background-image: url("logo.2729620f.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-logo__red-fill-dims {
+  width: 210px;
+  height: 57px;
+}
+
+.icon-logo__red-outline, .icon-logo__red-outline\:regular {
+  background-image: url("logo.2729620f.svg");
+  background-position: 0 -57px;
+  background-repeat: no-repeat;
+}
+
+.icon-logo__red-outline-dims {
+  width: 210px;
+  height: 57px;
+}
+
+.icon-logo__white-fill, .icon-logo__white-fill\:regular {
+  background-image: url("logo.2729620f.svg");
+  background-position: 0 -114px;
+  background-repeat: no-repeat;
+}
+
+.icon-logo__white-fill-dims {
+  width: 210px;
+  height: 57px;
+}
+
+.icon-logo__white-outline, .icon-logo__white-outline\:regular {
+  background-image: url("logo.2729620f.svg");
+  background-position: 0 -171px;
+  background-repeat: no-repeat;
+}
+
+.icon-logo__white-outline-dims {
+  width: 210px;
+  height: 57px;
+}
+
+.icon-checkbox-checked, .icon-checkbox-checked\:regular {
+  background-image: url("check.a15f5b9c.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-checkbox-checked-dims {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-checkbox-unchecked, .icon-checkbox-unchecked\:regular {
+  background-image: url("check.a15f5b9c.svg");
+  background-position: 0 -16px;
+  background-repeat: no-repeat;
+}
+
+.icon-checkbox-unchecked-dims {
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=index.30e9e7bd.css.map */
