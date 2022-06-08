@@ -482,4 +482,26 @@ template, [hidden] {
   height: 16px;
 }
 
+.icon-global, .icon-global\:regular {
+  background-image: url("global.f2ced41b.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-global-dims {
+  width: 16px;
+  height: 17px;
+}
+
+.icon-favicon, .icon-favicon\:regular {
+  background-image: url("favicon.e6fd13b9.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-favicon-dims {
+  width: 32px;
+  height: 32px;
+}
+
 /*# sourceMappingURL=index.30e9e7bd.css.map */
