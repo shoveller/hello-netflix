@@ -1,5 +1,29 @@
-/* Icons from directory "" */
-.icon-checkbox-checked,.icon-checkbox-checked\:regular{background-image:url('../public/check.svg');background-position:0 0;background-repeat:no-repeat}
-.icon-checkbox-checked-dims{width:16px;height:16px}
-.icon-checkbox-unchecked,.icon-checkbox-unchecked\:regular{background-image:url('../public/check.svg');background-position:0 -16px;background-repeat:no-repeat}
-.icon-checkbox-unchecked-dims{width:16px;height:16px}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 16px;
+
+  & input[type=checkbox] {
+    display: none;
+  }
+
+  & input[type=checkbox] + label {
+    cursor: pointer;
+    padding-left: 23px;
+    color: var(--color-grey);
+    user-select: none;
+    font-family: 'Spoqa Han Sans', 'serif';
+    font-size: 14px;
+    background-image: url('../public/check.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  & input[type=checkbox]:checked + label {
+    background-image: url('../public/check.svg');
+    background-position: 0 -16px;
+    background-repeat: no-repeat;
+  }
+}
+

@@ -460,26 +460,32 @@ template, [hidden] {
   height: 57px;
 }
 
-.icon-checkbox-checked, .icon-checkbox-checked\:regular {
+.checkbox {
+  height: 16px;
+  place-content: center;
+  display: flex;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"] + label {
+  cursor: pointer;
+  color: var(--color-grey);
+  user-select: none;
   background-image: url("check.a15f5b9c.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  padding-left: 23px;
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 14px;
 }
 
-.icon-checkbox-checked-dims {
-  width: 16px;
-  height: 16px;
-}
-
-.icon-checkbox-unchecked, .icon-checkbox-unchecked\:regular {
+.checkbox input[type="checkbox"]:checked + label {
   background-image: url("check.a15f5b9c.svg");
   background-position: 0 -16px;
   background-repeat: no-repeat;
-}
-
-.icon-checkbox-unchecked-dims {
-  width: 16px;
-  height: 16px;
 }
 
 .icon-global, .icon-global\:regular {
