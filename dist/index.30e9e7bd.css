@@ -184,6 +184,7 @@ template, [hidden] {
   --color-green: #2ede75;
   --color-black: #010101;
   --color-grey: #757575;
+  --color-grey-dark: #2f2f2f;
   --color-white: #fff;
   --color-violet: #7b61ff;
 }
@@ -336,6 +337,7 @@ template, [hidden] {
 .button, .button__icon {
   background-color: var(--color-red);
   color: var(--color-white);
+  white-space: nowrap;
   height: 40px;
   border: none;
   border-radius: 4px;
@@ -358,8 +360,8 @@ template, [hidden] {
 }
 
 .button__icon {
-  height: 56px;
-  width: 113px;
+  height: 60px;
+  border-radius: unset;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -369,7 +371,6 @@ template, [hidden] {
 
 .button__icon:focus {
   border: 3px solid var(--color-green);
-  width: 119px;
   outline: none;
 }
 
@@ -383,15 +384,20 @@ template, [hidden] {
 }
 
 .input-continer {
-  width: 100%;
   display: inline-block;
 }
 
 .input, .input-dark {
   border: 1px solid var(--color-grey);
   width: 100%;
+  height: 60px;
+  box-sizing: border-box;
   color: var(--color-black);
   padding: 20px 18px;
+}
+
+.input:disabled, .input-dark:disabled {
+  background-color: #fff;
 }
 
 .input:focus, .input-dark:focus {
@@ -407,9 +413,17 @@ template, [hidden] {
 }
 
 .input-dark {
+  background-color: var(--color-grey-dark);
   color: var(--color-white);
-  background-color: #2f2f2f;
   border: none;
+}
+
+.input-dark:disabled {
+  background-color: var(--color-grey-dark);
+}
+
+.input-dark:disabled::placeholder {
+  color: var(--color-grey);
 }
 
 .message {
@@ -539,6 +553,10 @@ template, [hidden] {
 .header {
   justify-content: space-between;
   align-items: center;
+  display: flex;
+}
+
+.promotion-input {
   display: flex;
 }
 

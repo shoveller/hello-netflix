@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  white-space: nowrap;
 }
 
 .button {
@@ -29,8 +30,9 @@
 
 .button__icon {
   @extend .button;
-  height: 56px;
-  width: 113px;
+  height: 60px;
+  //width: 113px;
+  border-radius: unset;
   gap: 10px;
   padding: 15px 20px;
   display: flex;
@@ -40,7 +42,7 @@
   &:focus {
     border: 3px solid var(--color-green);
     outline: none;
-    width: 119px;
+    //width: 119px;
   }
 
   & > img {

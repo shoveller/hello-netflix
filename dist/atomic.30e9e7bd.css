@@ -384,7 +384,7 @@ template, [hidden] {
 
 .input-dark {
   color: var(--color-white);
-  background-color: #2f2f2f;
+  background-color: var(--color-grey-dark);
   border: none;
 }
 
