@@ -153,6 +153,30 @@ template, [hidden] {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.wd-221 {
+  width: 221px;
+}
+
+.wd-263 {
+  width: 263px;
+}
+
+.wd-297 {
+  width: 297px;
+}
+
+.wd-339 {
+  width: 339px;
+}
+
+.wd-371 {
+  width: 371px;
+}
+
 :root {
   --color-red: #e50914;
   --color-red-dark: #b70710;
@@ -236,30 +260,6 @@ template, [hidden] {
   font-size: 22px;
 }
 
-.flex {
-  display: flex;
-}
-
-.wd-221 {
-  width: 221px;
-}
-
-.wd-263 {
-  width: 263px;
-}
-
-.wd-297 {
-  width: 297px;
-}
-
-.wd-339 {
-  width: 339px;
-}
-
-.wd-371 {
-  width: 371px;
-}
-
 .showcase__sm {
   border: 1px dashed var(--color-violet);
   width: 78px;
@@ -336,6 +336,7 @@ template, [hidden] {
 .button, .button__icon {
   background-color: var(--color-red);
   color: var(--color-white);
+  height: 40px;
   border: none;
   border-radius: 4px;
   place-content: center;
@@ -357,6 +358,7 @@ template, [hidden] {
 }
 
 .button__icon {
+  height: 56px;
   width: 113px;
   justify-content: center;
   align-items: center;
@@ -532,6 +534,12 @@ template, [hidden] {
 .icon-favicon-dims {
   width: 32px;
   height: 32px;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.30e9e7bd.css.map */

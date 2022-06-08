@@ -1,7 +1,7 @@
 @import "normalize";
+@import "layouts";
 @import "subatoms/variables";
 @import "subatoms/fonts";
-@import "layouts";
 @import "atoms/showcase";
 @import "atoms/arrow";
 @import "atoms/button";
@@ -11,4 +11,5 @@
 @import "atoms/checkbox";
 @import "atoms/select";
 @import "atoms/favicon";
+@import "molcules/header";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
