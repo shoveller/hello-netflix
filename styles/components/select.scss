@@ -1,0 +1,35 @@
+// https://wazacs.tistory.com/34
+.icon-caret-down-fill, .icon-caret-down-fill\:regular {
+  background-image: url('../public/select.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat
+}
+
+.icon-caret-down-fill-dims {
+  width: 16px;
+  height: 17px
+}
+
+.icon-global, .icon-global\:regular {
+  background-image: url('../public/select.svg');
+  background-position: 0 -17px;
+  background-repeat: no-repeat
+}
+
+.icon-global-dims {
+  width: 16px;
+  height: 17px
+}
+
+.select {
+  appearance: none;
+  outline: none;
+  padding: 12px 10px;
+  border: 1px solid var(--color-grey);
+  background-color: transparent;
+  color: var(--color-grey);
+
+  &:focus {
+    border: 3px solid var(--color-green);
+  }
+}

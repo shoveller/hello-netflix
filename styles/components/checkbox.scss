@@ -16,13 +16,13 @@
     font-family: 'Spoqa Han Sans', 'serif';
     font-size: 14px;
     background-image: url('../public/check.svg');
-    background-position: 0 0;
+    background-position: 0 -16px;
     background-repeat: no-repeat;
   }
 
   & input[type=checkbox]:checked + label {
     background-image: url('../public/check.svg');
-    background-position: 0 -16px;
+    background-position: 0 0;
     background-repeat: no-repeat;
   }
 }

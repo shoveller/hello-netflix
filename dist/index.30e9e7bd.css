@@ -475,7 +475,7 @@ template, [hidden] {
   color: var(--color-grey);
   user-select: none;
   background-image: url("check.a15f5b9c.svg");
-  background-position: 0 0;
+  background-position: 0 -16px;
   background-repeat: no-repeat;
   padding-left: 23px;
   font-family: Spoqa Han Sans, "serif";
@@ -484,19 +484,43 @@ template, [hidden] {
 
 .checkbox input[type="checkbox"]:checked + label {
   background-image: url("check.a15f5b9c.svg");
-  background-position: 0 -16px;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.icon-global, .icon-global\:regular {
-  background-image: url("global.f2ced41b.svg");
+.icon-caret-down-fill, .icon-caret-down-fill\:regular {
+  background-image: url("select.14d1aac9.svg");
   background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-caret-down-fill-dims {
+  width: 16px;
+  height: 17px;
+}
+
+.icon-global, .icon-global\:regular {
+  background-image: url("select.14d1aac9.svg");
+  background-position: 0 -17px;
   background-repeat: no-repeat;
 }
 
 .icon-global-dims {
   width: 16px;
   height: 17px;
+}
+
+.select {
+  appearance: none;
+  border: 1px solid var(--color-grey);
+  color: var(--color-grey);
+  background-color: #0000;
+  outline: none;
+  padding: 12px 10px;
+}
+
+.select:focus {
+  border: 3px solid var(--color-green);
 }
 
 .icon-favicon, .icon-favicon\:regular {
