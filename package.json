@@ -6,6 +6,7 @@
   "scripts": {
     "subatomic": "npx parcel subatomic.html",
     "atomic": "npx parcel atomic.html",
+    "molcule": "npx parcel molcule.html",
     "dev": "npx parcel index.html",
     "start": "npx serve dist"
   },
