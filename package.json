@@ -7,6 +7,7 @@
     "subatomic": "npx parcel subatomic.html",
     "atomic": "npx parcel atomic.html",
     "molcule": "npx parcel molcule.html",
+    "organisms": "npx parcel organisms.html",
     "dev": "npx parcel index.html",
     "start": "npx serve dist"
   },

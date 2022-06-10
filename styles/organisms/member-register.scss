@@ -1,0 +1,12 @@
+.member-register {
+  background-color: var(--color-black);
+  padding: 57px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.mobile {
+    max-width: 375px;
+  }
+}
