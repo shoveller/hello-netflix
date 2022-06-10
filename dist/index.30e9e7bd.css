@@ -189,48 +189,6 @@ template, [hidden] {
   --color-violet: #7b61ff;
 }
 
-.title-14 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.title-22 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.title-24 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.title-28 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.title-34 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 34px;
-  font-weight: bold;
-}
-
-.title-48 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 48px;
-  font-weight: bold;
-}
-
-.title-60 {
-  font-family: Spoqa Han Sans, "serif";
-  font-size: 60px;
-  font-weight: bold;
-}
-
 .text-12 {
   font-family: Spoqa Han Sans, "serif";
   font-size: 12px;
@@ -241,7 +199,7 @@ template, [hidden] {
   font-size: 14px;
 }
 
-.text-16 {
+.text-16, .member-register .container .title-sub3, .member-register .container .title-sub2 {
   font-family: Spoqa Han Sans, "serif";
   font-size: 16px;
 }
@@ -251,7 +209,7 @@ template, [hidden] {
   font-size: 18px;
 }
 
-.text-20 {
+.text-20, .member-register .container .title-sub1 {
   font-family: Spoqa Han Sans, "serif";
   font-size: 20px;
 }
@@ -259,6 +217,39 @@ template, [hidden] {
 .text-22 {
   font-family: Spoqa Han Sans, "serif";
   font-size: 22px;
+}
+
+.text-24 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 24px;
+}
+
+.text-28 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 28px;
+}
+
+.text-34 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 34px;
+}
+
+.text-48 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 48px;
+}
+
+.text-60, .member-register .container .title {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 60px;
+}
+
+.bold, .member-register .container .title {
+  font-weight: bold;
+}
+
+.white, .member-register .container .title-sub3, .member-register .container .title-sub2, .member-register .container .title-sub1, .member-register .container .title {
+  color: var(--color-white);
 }
 
 .showcase__sm {
@@ -387,7 +378,7 @@ template, [hidden] {
   display: inline-block;
 }
 
-.input, .input-dark {
+.input, .promotion-input.rounded .input, .promotion-input.rounded .input-dark, .input-dark {
   border: 1px solid var(--color-grey);
   width: 100%;
   height: 60px;
@@ -396,42 +387,34 @@ template, [hidden] {
   padding: 20px 18px;
 }
 
-.input:disabled, .input-dark:disabled {
+.input:disabled, .promotion-input.rounded .input:disabled, .promotion-input.rounded .input-dark:disabled, .input-dark:disabled {
   background-color: #fff;
 }
 
-.input:focus, .input-dark:focus {
+.input:focus, .promotion-input.rounded .input:focus, .promotion-input.rounded .input-dark:focus, .input-dark:focus {
   outline: none;
 }
 
-.input:invalid, .input-dark:invalid {
+.input:invalid, .promotion-input.rounded .input:invalid, .promotion-input.rounded .input-dark:invalid, .input-dark:invalid {
   border-bottom: 3px solid var(--color-red);
 }
 
-.input:invalid + .message, .input-dark:invalid + .message {
+.input:invalid + .message, .promotion-input.rounded .input:invalid + .message, .promotion-input.rounded .input-dark:invalid + .message, .input-dark:invalid + .message {
   visibility: visible;
 }
 
-.input.rounded, .rounded.input-dark {
-  border-radius: 30px;
-}
-
-.input-dark {
+.input-dark, .promotion-input.rounded .input-dark {
   background-color: var(--color-grey-dark);
   color: var(--color-white);
   border: none;
 }
 
-.input-dark:disabled {
+.input-dark:disabled, .promotion-input.rounded .input-dark:disabled {
   background-color: var(--color-grey-dark);
 }
 
-.input-dark:disabled::placeholder {
+.input-dark:disabled::placeholder, .promotion-input.rounded .input-dark:disabled::placeholder {
   color: var(--color-grey);
-}
-
-.input-dark.rounded {
-  border-radius: 30px;
 }
 
 .message {
@@ -566,6 +549,86 @@ template, [hidden] {
 
 .promotion-input {
   display: flex;
+}
+
+.promotion-input.rounded {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-input.rounded .input-continer {
+  width: 60%;
+}
+
+.promotion-input.rounded .button__icon {
+  width: 40%;
+}
+
+.promotion-input.rounded .input, .promotion-input.rounded .input-dark {
+  color: var(--color-white);
+  border-radius: 30px;
+}
+
+.promotion-input.rounded .input:invalid, .promotion-input.rounded .input-dark:invalid {
+  border: 3px solid var(--color-red);
+}
+
+.promotion-input.rounded .input:invalid + .message, .promotion-input.rounded .input-dark:invalid + .message {
+  visibility: visible;
+}
+
+.promotion-input.rounded .input-dark {
+  color: var(--color-white);
+}
+
+.member-register {
+  background-color: var(--color-black);
+}
+
+.member-register .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 57px 120px;
+  display: flex;
+}
+
+.member-register .container .title-sub1, .member-register .container .title-sub2, .member-register .container .title-sub3 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 840px) {
+  .member-register .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 18px;
+    display: flex;
+  }
+
+  .member-register .container .title {
+    font-family: Spoqa Han Sans, "serif";
+    font-size: 34px;
+  }
+
+  .member-register .container .title-sub1 {
+    font-family: Spoqa Han Sans, "serif";
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .member-register .container .title-sub2 {
+    font-family: Spoqa Han Sans, "serif";
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .member-register .container .title-sub3 {
+    font-family: Spoqa Han Sans, "serif";
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=index.30e9e7bd.css.map */

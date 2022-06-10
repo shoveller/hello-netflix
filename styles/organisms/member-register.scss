@@ -1,12 +1,75 @@
-.member-register {
-  background-color: var(--color-black);
-  padding: 57px 120px;
+@mixin flex-center() {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
 
-  &.mobile {
-    max-width: 375px;
+.member-register {
+  background-color: var(--color-black);
+
+  & .container {
+    @include flex-center();
+    flex-direction: column;
+    padding: 57px 120px;
+
+    & .title {
+      @extend .text-60;
+      @extend .bold;
+      @extend .white;
+    }
+
+    & .title-sub1 {
+      @extend .text-20;
+      @extend .white;
+      font-weight: 700;
+    }
+
+    & .title-sub2 {
+      @extend .text-16;
+      @extend .white;
+      font-weight: 700;
+    }
+
+    & .title-sub3 {
+      @extend .text-16;
+      @extend .white;
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    & .container {
+      @include flex-center();
+      flex-direction: column;
+      padding: 20px 18px;
+
+      & .title {
+        font-family: 'Spoqa Han Sans', 'serif';
+        font-size: 34px;
+        @extend .bold;
+        @extend .white;
+      }
+
+      & .title-sub1 {
+        font-family: 'Spoqa Han Sans', 'serif';
+        font-size: 18px;
+        font-weight: 700;
+        @extend .white;
+      }
+
+      & .title-sub2 {
+        font-family: 'Spoqa Han Sans', 'serif';
+        font-size: 14px;
+        font-weight: 700;
+        @extend .white;
+      }
+
+      & .title-sub3 {
+        font-family: 'Spoqa Han Sans', 'serif';
+        font-size: 12px;
+        font-weight: 700;
+        @extend .white;
+      }
+    }
   }
 }

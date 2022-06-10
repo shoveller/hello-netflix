@@ -1,3 +1,40 @@
-.promotion-input {
+@mixin promotion-input() {
   display: flex;
+}
+
+.promotion-input {
+  @include promotion-input()
+}
+
+.promotion-input.rounded {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & .input-continer {
+    width: 60%;
+  }
+
+  & .button__icon {
+    width: 40%;
+  }
+
+  & .input {
+    @extend .input;
+    border-radius: 30px;
+    color: var(--color-whiteo);
+
+    &:invalid {
+      border: 3px solid var(--color-red);
+
+      & + .message {
+        visibility: visible;
+      }
+    }
+  }
+
+  & .input-dark {
+    @extend .input-dark;
+    color: var(--color-white);
+  }
 }
