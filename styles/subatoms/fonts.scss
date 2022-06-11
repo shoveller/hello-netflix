@@ -9,10 +9,18 @@ $textSizes: (12, 14, 16, 18, 20, 22, 24, 28, 34, 48, 60);
   }
 }
 
+@mixin bold() {
+  font-weight: 700;
+}
+
 .bold {
-  font-weight: bold;
+  @include bold();
+}
+
+@mixin white() {
+  color: var(--color-white);
 }
 
 .white {
-  color: var(--color-white);
+  @include white();
 }

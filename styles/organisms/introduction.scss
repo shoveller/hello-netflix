@@ -2,9 +2,40 @@
 
 .introduction {
   background-color: var(--color-black);
+  color: var(--color-white);
 
   .container {
     @include flex-center();
     padding: 60px 120px;
+
+    & .content {
+      @include flex-center();
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 1192px) {
+    .container {
+      @include flex-center();
+      flex-direction: column-reverse;
+      padding: 20px 18px;
+
+      & .content {
+        @include flex-center();
+
+        & p {
+          font-size: 24px;
+        }
+
+        & p:last-child {
+          @include flex-center();
+          flex-direction: column;
+
+          & span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
 }

@@ -248,11 +248,11 @@ template, [hidden] {
   font-size: 60px;
 }
 
-.bold, .member-register .container .title {
-  font-weight: bold;
+.bold {
+  font-weight: 700;
 }
 
-.white, .member-register .container .title-sub3, .member-register .container .title-sub2, .member-register .container .title-sub1, .member-register .container .title {
+.white {
   color: var(--color-white);
 }
 
@@ -728,6 +728,69 @@ template, [hidden] {
   color: var(--color-grey);
 }
 
+.text-12 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 12px;
+}
+
+.text-14 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 14px;
+}
+
+.text-16, .member-register .container .title-sub3, .member-register .container .title-sub2 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 16px;
+}
+
+.text-18 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 18px;
+}
+
+.text-20, .member-register .container .title-sub1 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 20px;
+}
+
+.text-22 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 22px;
+}
+
+.text-24 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 24px;
+}
+
+.text-28 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 28px;
+}
+
+.text-34 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 34px;
+}
+
+.text-48 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 48px;
+}
+
+.text-60, .member-register .container .title {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 60px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white {
+  color: var(--color-white);
+}
+
 .button, .button__icon {
   background-color: var(--color-red);
   color: var(--color-white);
@@ -945,13 +1008,16 @@ template, [hidden] {
 }
 
 .member-register .container .title {
+  color: var(--color-white);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
   display: flex;
 }
 
 .member-register .container .title-sub1, .member-register .container .title-sub2 {
+  color: var(--color-white);
   justify-content: center;
   align-items: center;
   font-weight: 700;
@@ -959,10 +1025,11 @@ template, [hidden] {
 }
 
 .member-register .container .title-sub3 {
+  color: var(--color-white);
   font-weight: 700;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1192px) {
   .member-register .container {
     flex-direction: column;
     justify-content: center;
@@ -972,11 +1039,14 @@ template, [hidden] {
   }
 
   .member-register .container .title {
+    color: var(--color-white);
     font-family: Spoqa Han Sans, "serif";
     font-size: 34px;
+    font-weight: 700;
   }
 
   .member-register .container .title-sub1 {
+    color: var(--color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -987,6 +1057,7 @@ template, [hidden] {
   }
 
   .member-register .container .title-sub2 {
+    color: var(--color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -997,6 +1068,7 @@ template, [hidden] {
   }
 
   .member-register .container .title-sub3 {
+    color: var(--color-white);
     font-family: Spoqa Han Sans, "serif";
     font-size: 12px;
     font-weight: 700;
@@ -1110,6 +1182,69 @@ template, [hidden] {
   }
 }
 
+.text-12 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 12px;
+}
+
+.text-14 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 14px;
+}
+
+.text-16, .member-register .container .title-sub2, .member-register .container .title-sub3 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 16px;
+}
+
+.text-18 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 18px;
+}
+
+.text-20, .member-register .container .title-sub1 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 20px;
+}
+
+.text-22 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 22px;
+}
+
+.text-24 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 24px;
+}
+
+.text-28 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 28px;
+}
+
+.text-34 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 34px;
+}
+
+.text-48 {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 48px;
+}
+
+.text-60, .member-register .container .title {
+  font-family: Spoqa Han Sans, "serif";
+  font-size: 60px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white {
+  color: var(--color-white);
+}
+
 .button, .button__icon {
   background-color: var(--color-red);
   color: var(--color-white);
@@ -1327,13 +1462,16 @@ template, [hidden] {
 }
 
 .member-register .container .title {
+  color: var(--color-white);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
   display: flex;
 }
 
 .member-register .container .title-sub1, .member-register .container .title-sub2 {
+  color: var(--color-white);
   justify-content: center;
   align-items: center;
   font-weight: 700;
@@ -1341,10 +1479,11 @@ template, [hidden] {
 }
 
 .member-register .container .title-sub3 {
+  color: var(--color-white);
   font-weight: 700;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1192px) {
   .member-register .container {
     flex-direction: column;
     justify-content: center;
@@ -1354,11 +1493,14 @@ template, [hidden] {
   }
 
   .member-register .container .title {
+    color: var(--color-white);
     font-family: Spoqa Han Sans, "serif";
     font-size: 34px;
+    font-weight: 700;
   }
 
   .member-register .container .title-sub1 {
+    color: var(--color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1369,6 +1511,7 @@ template, [hidden] {
   }
 
   .member-register .container .title-sub2 {
+    color: var(--color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1379,6 +1522,7 @@ template, [hidden] {
   }
 
   .member-register .container .title-sub3 {
+    color: var(--color-white);
     font-family: Spoqa Han Sans, "serif";
     font-size: 12px;
     font-weight: 700;
@@ -1494,6 +1638,7 @@ template, [hidden] {
 
 .introduction {
   background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .introduction .container {
@@ -1501,6 +1646,44 @@ template, [hidden] {
   align-items: center;
   padding: 60px 120px;
   display: flex;
+}
+
+.introduction .container .content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 1192px) {
+  .introduction .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 18px;
+    display: flex;
+  }
+
+  .introduction .container .content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .introduction .container .content p {
+    font-size: 24px;
+  }
+
+  .introduction .container .content p:last-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .introduction .container .content p:last-child span {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=organisms.30e9e7bd.css.map */
