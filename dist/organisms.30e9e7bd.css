@@ -571,6 +571,11 @@ template, [hidden] {
   height: 32px;
 }
 
+.screenshot {
+  width: 60vw;
+  max-width: 640px;
+}
+
 .header {
   justify-content: space-between;
   align-items: center;
