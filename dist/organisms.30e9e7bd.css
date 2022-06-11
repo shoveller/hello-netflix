@@ -728,6 +728,55 @@ template, [hidden] {
   color: var(--color-grey);
 }
 
+.button, .button__icon {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  white-space: nowrap;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  place-content: center;
+  padding: 12px 20px;
+  display: flex;
+}
+
+.button:hover, .button__icon:hover {
+  background-color: var(--color-red-dark);
+}
+
+.button:focus, .button__icon:focus {
+  border: 3px solid var(--color-green);
+  outline: none;
+}
+
+.button:disabled, .button__icon:disabled {
+  background-color: var(--color-grey);
+}
+
+.button__icon {
+  height: 60px;
+  border-radius: unset;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  display: flex;
+}
+
+.button__icon:focus {
+  border: 3px solid var(--color-green);
+  outline: none;
+}
+
+.button__icon > img {
+  width: 22px;
+  height: 14px;
+}
+
+.button__icon.small {
+  border-radius: 30px;
+}
+
 .input-continer {
   display: inline-block;
 }
@@ -1037,6 +1086,27 @@ template, [hidden] {
 
   .member-register .container .promotion-input .input-dark:disabled::placeholder {
     color: var(--color-grey);
+  }
+
+  .member-register .container .promotion-input .input-dark {
+    height: 40px;
+    border-radius: 30px;
+  }
+
+  .member-register .container .promotion-input .input-dark:invalid {
+    border: 3px solid var(--color-red);
+  }
+
+  .member-register .container .promotion-input .input-dark:invalid + .message {
+    visibility: visible;
+  }
+
+  .member-register .container .promotion-input .button__icon {
+    height: 40px;
+    border-radius: 30px;
+    font-family: Spoqa Han Sans, "serif";
+    font-size: 14px;
+    font-weight: 700;
   }
 }
 

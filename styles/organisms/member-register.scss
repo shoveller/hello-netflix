@@ -1,3 +1,4 @@
+@import "../atoms/button";
 @import "../molcules/promotion-input";
 
 @mixin flex-center() {
@@ -82,7 +83,28 @@
       }
 
       & .promotion-input {
-        @include promotion-input-small()
+        @include promotion-input-small();
+
+        & .input-dark {
+          @include rounded();
+          height: 40px;
+
+          &:invalid {
+            border: 3px solid var(--color-red);
+
+            & + .message {
+              visibility: visible;
+            }
+          }
+        }
+
+        & .button__icon {
+          @include rounded();
+          height: 40px;
+          font-family: 'Spoqa Han Sans', 'serif';
+          font-size: 14px;
+          font-weight: 700;
+        }
       }
     }
   }

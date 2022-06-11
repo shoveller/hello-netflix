@@ -28,6 +28,10 @@
   }
 }
 
+@mixin rounded() {
+  border-radius: 30px;
+}
+
 .button__icon {
   @extend .button;
   height: 60px;
@@ -51,6 +55,6 @@
   }
 
   &.small {
-    border-radius: 30px;
+    @include rounded();
   }
 }
