@@ -1,0 +1,10 @@
+@import "../organisms/member-register";
+
+.introduction {
+  background-color: var(--color-black);
+
+  .container {
+    @include flex-center();
+    padding: 60px 120px;
+  }
+}
