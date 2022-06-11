@@ -902,7 +902,14 @@ template, [hidden] {
   display: flex;
 }
 
-.member-register .container .title-sub1, .member-register .container .title-sub2, .member-register .container .title-sub3 {
+.member-register .container .title-sub1, .member-register .container .title-sub2 {
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  display: flex;
+}
+
+.member-register .container .title-sub3 {
   font-weight: 700;
 }
 
@@ -921,15 +928,23 @@ template, [hidden] {
   }
 
   .member-register .container .title-sub1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Spoqa Han Sans, "serif";
     font-size: 18px;
     font-weight: 700;
+    display: flex;
   }
 
   .member-register .container .title-sub2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Spoqa Han Sans, "serif";
     font-size: 14px;
     font-weight: 700;
+    display: flex;
   }
 
   .member-register .container .title-sub3 {
