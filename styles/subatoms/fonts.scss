@@ -24,3 +24,11 @@ $textSizes: (12, 14, 16, 18, 20, 22, 24, 28, 34, 48, 60);
 .white {
   @include white();
 }
+
+@mixin grey() {
+  color: var(--color-grey);
+}
+
+.grey {
+  @include grey();
+}

@@ -1,0 +1,33 @@
+@import "../organisms/member-register";
+
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 50px 70px;
+
+  .nav {
+    @include flex-center();
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+
+    & span {
+      color: var(--color-grey);
+      flex-shrink: 0;
+      flex-basis: 205px;
+    }
+  }
+
+  .company-info {
+    @include flex-center();
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+
+    & span {
+      color: var(--color-grey);
+      flex-shrink: 0;
+    }
+  }
+}
