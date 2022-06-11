@@ -1,3 +1,5 @@
+@import "../molcules/promotion-input";
+
 @mixin flex-center() {
   display: flex;
   justify-content: center;
@@ -16,6 +18,8 @@
       @extend .text-60;
       @extend .bold;
       @extend .white;
+      @include flex-center();
+      flex-direction: column;
     }
 
     & .title-sub1 {
@@ -69,6 +73,10 @@
         font-size: 12px;
         font-weight: 700;
         @extend .white;
+      }
+
+      & .promotion-input {
+        @include promotion-input-small()
       }
     }
   }

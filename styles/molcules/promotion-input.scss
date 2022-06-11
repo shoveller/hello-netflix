@@ -1,12 +1,10 @@
+@import "../atoms/input";
+
 @mixin promotion-input() {
   display: flex;
 }
 
-.promotion-input {
-  @include promotion-input()
-}
-
-.promotion-input.rounded {
+@mixin promotion-input-small() {
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -20,9 +18,9 @@
   }
 
   & .input {
-    @extend .input;
+    @include input();
     border-radius: 30px;
-    color: var(--color-whiteo);
+    color: var(--color-white);
 
     &:invalid {
       border: 3px solid var(--color-red);
@@ -34,7 +32,15 @@
   }
 
   & .input-dark {
-    @extend .input-dark;
+    @include input-dark();
     color: var(--color-white);
   }
+}
+
+.promotion-input {
+  @include promotion-input()
+}
+
+.promotion-input.small {
+  @include promotion-input-small()
 }

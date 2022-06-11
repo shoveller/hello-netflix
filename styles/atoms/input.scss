@@ -2,7 +2,7 @@
   display: inline-block;
 }
 
-.input {
+@mixin input() {
   border: 1px solid var(--color-grey);
   padding: 20px 18px;
   // FIXME: 왜 100%를 설정하면, 부모를 넘어서는가?
@@ -29,8 +29,12 @@
   }
 }
 
-.input-dark {
-  @extend .input;
+.input {
+  @include input()
+}
+
+@mixin input-dark() {
+  @include input;
   border: none;
   background-color: var(--color-grey-dark);
   color: var(--color-white);
@@ -42,4 +46,8 @@
       color: var(--color-grey);
     }
   }
+}
+
+.input-dark {
+  @include input-dark()
 }
